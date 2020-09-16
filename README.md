@@ -27,7 +27,7 @@ As a biomedical data science group, we use GitHub for most of our workflow.
 ### Issues
 Every task has an issue, and each issue is labeled to help us stay organized.
 
-New issues are created using one of our three [issue templates](): 1) new feature request or enhancement, 2) bug report, or 3) question.
+New issues are created using one of our three [issue templates](.github/ISSUE_TEMPLATE): 1) new feature request or enhancement, 2) bug report, or 3) question.
 
 Good issues are clearly written and small enough to be addressed in one sprint of work (1-5 days).
 
