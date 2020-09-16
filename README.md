@@ -6,6 +6,7 @@
 - [Meetings](#meetings)
 - [Data](#data)
 - [Compute](#compute)
+- [MGH logistics](#mgh-logistics)
 - [Office space](#office-space)
 - [Roster](https://paper.dropbox.com/doc/aguirre-lab-roster-lGQvFINrQ1ZQ6A6GnMpkp)
 - [IRB coverage](https://paper.dropbox.com/doc/IRB-coverage--A7uo~yh4R0BWfUIVP3aAtb_MAg-ypV58gm96PA8WeNy09XLM)
@@ -136,8 +137,8 @@ We recommend you use a Mac or Linux machine and a terminal.
         1. Select “Biomedical Research” and click next
     1. You should now see the Biomedical Research Investigators and Key Personnel module listed on the main menu
     1. Complete the training module and retain the completion certificates for your records
-    1. Be added to the correct IRB. *You must be on the appropriate IRB before you access data for that project!*
-    1. Request access to Electronic Data Warehouse (EDW), the MGH database for medical record data, via https://enterpriseanalytics.partners.org/Access/
+1. Be added to the correct IRB. *You must be on the appropriate IRB before you access data for that project!*
+1. Request access to Electronic Data Warehouse (EDW), the MGH database for medical record data, via https://enterpriseanalytics.partners.org/Access/
 
 ## Office space
 _Not relevant now since we work from home due to COVID-19_
