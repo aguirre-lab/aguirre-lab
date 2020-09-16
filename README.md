@@ -149,7 +149,5 @@ _Not relevant now since we work from home due to COVID-19_
     - Some desk space
 - [Simches 5](https://goo.gl/maps/ZRyEoxg1nNSkUBe87)
     - Aaron's wet lab space
-- [Broad Institute Data Sciences Platform](https://g.page/broad-institute-105b?share)
-    - Erik's office
 - [Health Transformation Lab at MGH](https://goo.gl/maps/PfJg39PFCjtZ9zch8)
     - Our GPU workstations and more desk space
