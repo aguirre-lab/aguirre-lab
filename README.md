@@ -1,6 +1,7 @@
 # Aguirre Lab - onboarding & workflow
 
 ## Contents
+- [Stack](#stack)
 - [GitHub](#github)
 - [Slack](#slack)
 - [Meetings](#meetings)
@@ -11,15 +12,33 @@
 - [Roster](https://paper.dropbox.com/doc/aguirre-lab-roster-lGQvFINrQ1ZQ6A6GnMpkp)
 - [IRB coverage](https://paper.dropbox.com/doc/IRB-coverage--A7uo~yh4R0BWfUIVP3aAtb_MAg-ypV58gm96PA8WeNy09XLM)
 
+## Stack
+In the technology world, a "stack" is the set of tools, libraries, and packages one or one's team uses.
+
+Read [`the missing semester of your CS education`](https://missing.csail.mit.edu) to learn basic proficiency with the tools we use every day.
+
+We use macOS and Ubuntu 18.04 or 20.04. Our GPU workstations and servers all run the latter.
+
+We interact with our workstations and servers through the command line. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, we like `tmux`. We do not use graphical remote desktop software.
+
+Most of our technical work and project management is in GitHub: version control, documentation, code review, issues, etc.
+
+We use Dropbox to store results, smaller data sets, manuscripts, etc.
+
+We use Keynote and Powerpoint for presentations.
+
+We communicate via Slack, email, and Zoom.
+
+We schedule meetings on our MGH calendars (Outlook).
+
 ## GitHub
 
 As a biomedical data science group, we use GitHub for most of our workflow.
 
 ### Getting started
-1. DO NOT SHARE PHI!
+1. DO NOT SHARE PHI ON GITHUB!
 1. Do not share code via Dropbox, email, or any other mechanism than GitHub.
 1. Our GitHub organization is [`https://github.com/aguirre-lab`](https://github.com/aguirre-lab).
-1. If you do not have a GitHub account, create one, add your full name, and ask someone via Slack to add you.
 1. Every project has a (1) repo (`$PROJECT_NAME`), (2) board (see below), (3) Slack channel to discuss the project (`#$PROJECT_NAME`), and (4) Slack channel for GitHub notifications for that repo (`#PROJECT_NAME-repo`).
 1. Every repo starts out private. Open-sourcing of code requires a discussion with Aaron.
 1. Every repo has a `README`.
