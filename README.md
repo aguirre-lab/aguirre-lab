@@ -140,6 +140,8 @@ We remotely access our workstations via VPN and SSH.
 
 We recommend you use a Mac or Linux machine and a terminal.
 
+ERISOne is the MGB research computing cluster. We do not usually use it, but have documented how to set it up for a data science workflow: [`erisone documentation`](/erisone.md)
+
 ## MGH logistics
 1. Request VPN access
     1. You need to log in to the Partners VPN if you SSH to a Partners machine, query the EDW, etc.. Request access at https://rc.partners.org/kb/article/2894
