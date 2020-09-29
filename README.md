@@ -133,6 +133,8 @@ If you sync your Dropbox account to your local machine, it must be in compliance
 
 Do not store code on Dropbox. Code belongs on GitHub.
 
+Instructions for installing and configuring dropbox on our linux workstations is documnted here: [`dropbox instructions`](/dropbox.md)
+
 ## Compute
 Our compute inventory is at this [Dropbox Paper link](https://paper.dropbox.com/doc/aguirre-lab-pc-inventory--A7v~CM2jXCa06LGcCwmufIwZAg-miOikxSGYPyo6GkP8Zv5Y).
 
