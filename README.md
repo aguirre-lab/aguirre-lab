@@ -25,7 +25,7 @@ Most of our technical work and project management is in GitHub: version control,
 
 We use Dropbox to store results, smaller data sets, manuscripts, etc. [`Here is a guide`](dropbox.md) to setting up Dropbox on a Linux machine.
 
-We use Keynote and Powerpoint for presentations.
+We use Keynote for presentations.
 
 We communicate via Slack, email, and Zoom.
 
