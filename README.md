@@ -17,7 +17,7 @@ In the technology world, a "stack" is the set of tools, libraries, and packages 
 
 Read [`the missing semester of your CS education`](https://missing.csail.mit.edu) to learn basic proficiency with the tools we use every day.
 
-We use macOS and Ubuntu 18.04 or 20.04. Our GPU workstations and servers all run the latter.
+We use macOS and Ubuntu Linux. Our GPU workstations and servers run the latter.
 
 We interact with our workstations and servers through the command line. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, we like `tmux`. We do not use graphical remote desktop software.
 
