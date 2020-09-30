@@ -23,7 +23,7 @@ We interact with our workstations and servers through the command line. [`iTerm2
 
 Most of our technical work and project management is in GitHub: version control, documentation, code review, issues, etc.
 
-We use Dropbox to store results, smaller data sets, manuscripts, etc.
+We use Dropbox to store results, smaller data sets, manuscripts, etc. [`Here is a guide`](dropbox.md) to setting up Dropbox on a Linux machine.
 
 We use Keynote and Powerpoint for presentations.
 
