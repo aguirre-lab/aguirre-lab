@@ -85,13 +85,34 @@ New PRs follow our [template](.github/pull_request_template.md).
 
 List the issues your PR closes. This should auto-populated the "linked issues" section on the right nav bar.
 
-Describe the major changes.
+Describe the major changes in bullet points.
+
+Always start your PR as a draft. Do not convert the draft into a full PR until your work is finalized and ready for review. This is for two reasons. First, automated code tests run on full PRs and consume the finite amount of run time that GitHub provides us. Second, reviewers should only dedicate time for reviewing your PR when it is ready.
 
 Assign at least one reviewer.
 
 Reviewers approve PRs before code merges to `master`. They have 48 hours. If a review is stale, remind the reviewer.
 
 When PRs are approved, all commits are "squash merged", e.g. combine all commits from the head branch into a single commit in the base branch. Also, the branch is automatically deleted.
+
+We encourage small and fast PRs that solve one or a few issues. They are easier to write, review, and merge. Hence, they are also less likely to introduce catastrophic bugs.
+
+### Code reviews
+
+Reviewing other's code, and having your code reviewed by others, is an important part of ensuring our code is excellent. It also helps us improve how we communicate ideas -- in code, in comments as a reviewer, and in responses to reviewer comments.
+
+Code reviewers focus on implementation and style that are not caught by debugging or `pre-commit` hooks.
+
+A few key points:
+1. Are variables clearly named and self-explanatory? We avoid short names or acronyms that lack description.
+1. Are arguments type-hinted?
+1. Is code appropriately modularized? If code is repeated, should it be a function instead?
+1. Is code in the appropriate scope for that script? Should the function be somewhere else in the repo?
+1. Is the functionality performant? Is there a faster but not substantially more challenging implementation?
+
+The onus for code to work is on the developer who submits the PR. Automated tests also help with this.
+
+Reviewing code is hard until you spend some time with our group to understand our style. We recommend you look at the reviews from old merged PRs to understand what is expected of a reviewer.
 
 ## Slack
 Join [`aguirre-lab.slack.com`](aguirre-lab.slack.com) with your MGH email.
