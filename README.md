@@ -168,6 +168,7 @@ ERISOne is the MGB research computing cluster. We do not usually use it, but hav
 ## MGH logistics
 1. Request VPN access
     1. You need to log in to the Partners VPN if you SSH to a Partners machine, query the EDW, etc.. Request access at https://rc.partners.org/kb/article/2894
+    1. After you set up your MGH account on your iOS device, open the Partners App Catalog and download Okta Verify. This enables two-factor authentication via a push notification on your mobile device, instead of having to get an SMS passcode.
 1. Complete CITI training
     1. Go to https://www.citiprogram.org/
     1. Click on the “Register” tab
