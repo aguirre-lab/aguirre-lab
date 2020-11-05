@@ -3,6 +3,7 @@
 ## Contents
 - [Stack](#stack)
 - [GitHub](#github)
+- [Wiki](#Wiki)
 - [Slack](#slack)
 - [Meetings](#meetings)
 - [Data](#data)
@@ -113,6 +114,21 @@ A few key points:
 The onus for code to work is on the developer who submits the PR. Automated tests also help with this.
 
 Reviewing code is hard until you spend some time with our group to understand our style. We recommend you look at the reviews from old merged PRs to understand what is expected of a reviewer.
+
+## Wiki
+Our [Wiki](https://github.com/aguirre-lab/ml4c3/wiki) contains the documentation related to the work done in aguirre-lab repos, 
+specially `ml4c3` repo. There, information about data sources, flows and storage, as well as all modes, tools and scripts is presented.
+
+If you are interested in contributing to our wiki, you can do so. However, consider the following:
+
+**MOST IMPORTANT: Do not add changes directly into the wiki**
+
+If you want to add or change the documentation on the wiki, use our [wiki repository](https://github.com/aguirre-lab/ml4c3-wiki/)
+From there, create an issue, a branch and commit your changes. Once the changes are merged with master via a pull request,
+an automated pipeline will synchronize those changes with our wiki.
+
+If you don't have push access to our wiki repo, fork it and submit a pull request. We will review it and add your changes.
+
 
 ## Slack
 Join [`aguirre-lab.slack.com`](aguirre-lab.slack.com) with your MGH email.
