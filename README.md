@@ -69,14 +69,89 @@ Issues that are being actively worked on are moved to the `In progress (issues)`
 Issues do not go in `In review (PRs)` column. Only PRs go there.
 
 ### Branches
-Name your branch with your initials, a description, and dashes between words:
+Generally, create a branch for each issue and work on it until the code is ready to be merged with the master.
+Name your branch with your initials, a description related to the issue, and dashes between words. 
+
+To create the branch and push it to the repo, follow these two steps:
 
 ```bash
-git checkout -B er-fix-grid-ecg-plot
+$ git checkout -b er-fix-grid-ecg-plot
+$ git push -u origin er-fix-grid-ecg-plot
 ```
 
 ### Commit messages
+Commit changes by adding the corresponding files and commit them. If you also want to see the changes on the repo, push them:
+```bash
+$ git add <file_1> <file2_> <file_n>
+$ git commit -m <message>
+$ git push 
+```
 We do not enforce strict commit message style, but try to follow good practices as described in this blog post: https://chris.beams.io/posts/git-commit/#capitalize.
+Moreover, it is strongly encouraged to add the issue id at each commit message, so commits are tracked within the issue:
+```bash
+$ git commit -m <<message> Ref #<issue id>>
+```
+
+### Pre-commit hooks
+The repo is setup so that whenever you commit a file, the linting pipeline is run.
+If the tests are passed, then the files are commited. If they aren't the files won't be allowed to be commited.
+
+#### Linting
+Linting the code means keeping the code readable and in a good format (Similar to
+what [PEP8](https://www.python.org/dev/peps/pep-0008/) dictates). To do that,
+a pipeline has been configured to run formatting tests. This pipeline will
+check your code for formatting mistakes. It will also reformat some of your
+code automatically so that you don't have to do it yourself, but some
+modifications will still need to be done manually.
+
+The following tests compose the linting pipeline:
+
+| Test name                       | Short description                                                           |
+|---------------------------------|-----------------------------------------------------------------------------|
+| check-executables-have-shebangs | Ensures that (non-binary) executables have a shebang.                       |
+| check-symlinks                  | Checks for symlinks which do not point to anything.                         |
+| check-toml                      | This hook checks xml files for parseable syntax.                            |
+| check-yaml                      | This hook checks yaml files for parseable syntax.                           |
+| debug-statements                | Check for debugger imports and py37+ `breakpoint()` calls in python source. |
+| end-of-file-fixer               | Ensures that a file is either empty, or ends with one newline.              |
+| mixed-line-ending               | Replaces ; endings bu \n                                                    |
+| name-tests-test                 | This verifies that test files are named correctly                           |
+| no-commit-to-branch             | Don't commit to branch (master)                                             |
+| trailing-whitespace             | This hook trims trailing whitespace.                                        |
+| python-use-type-annotations     | Enforce that python3.6+ type annotations are used instead of type comments  |
+| python-no-log-warn              | A quick check for the deprecated `.warn()` method of python loggers         |
+| rst-backticks                   | Detect common mistake of using single backticks when writing rst            |
+| isort                           | Check and reorders imports                                                  |
+| seed-isort-config               | Automatic configuration for third party packages for isort                  |
+| black                           | Popular linter. Checks and reformats code                                   |
+| docformatter                    | Reformats docstrings                                                        |
+| pydocstyle                      | Checks docstrings' format                                                   |
+| markdownlint                    | Checks markdown syntax                                                      |
+| flake8                          | Popular linter. Checks the code more deeply than black                      |
+| pylint                          | Most popular linter and also the most strict                                |
+| mypy                            | Checks python's typing                                                      |
+| gitlint                         | Checks commit messages                                                      |
+
+This pipeline is called on every commit. However, if you want to pass a particular 
+test of the pipeline at any time, you can run: 
+
+```pre-commit run <name of the test>```
+
+
+#### Dealing with the hooks
+Normally, all tests should pass before you commit. However, sometimes
+tests are too strict or they ask for somethings that can't be made in
+a particular situation. Some tests may even contradict each other.
+
+If you find yourself in one of these situations, you can to skip a particular test run by doing:
+
+```$ SKIP=pylint git commit -m 'this is a special commit' ```
+
+To skip multiple tests:
+```$ SKIP=pylint,flake8 git commit -m 'this is a special commit' ```
+
+To skip all the tests (this should hardly ever happen):
+```$ git commit -m 'this is a very special commit' --no-verify ```
 
 ### Pull requests (PRs)
 To contribute code or documentation changes from your branch to the `master` branch in the repo, open a PR.
@@ -98,7 +173,6 @@ When PRs are approved, all commits are "squash merged", e.g. combine all commits
 We encourage small and fast PRs that solve one or a few issues. They are easier to write, review, and merge. Hence, they are also less likely to introduce catastrophic bugs.
 
 ### Code reviews
-
 Reviewing other's code, and having your code reviewed by others, is an important part of ensuring our code is excellent. It also helps us improve how we communicate ideas -- in code, in comments as a reviewer, and in responses to reviewer comments.
 
 Code reviewers focus on implementation and style that are not caught by debugging or `pre-commit` hooks.
