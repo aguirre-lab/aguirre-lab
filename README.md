@@ -166,13 +166,11 @@ We recommend you use a Mac or Linux machine and a terminal.
 ERISOne is the MGB research computing cluster. We do not usually use it, but have documented how to set it up for a data science workflow: [`erisone documentation`](/erisone.md)
 
 ### Workstation benchmarking tests
-Workstation's RAM, CPU and GPU can be tested with stress tests. These tests put the workstation under load and log the system status.
+Test and log your workstation's RAM, CPU, and GPU usage, power consumption, and heat load.
 
-GPU, CPU and RAM usage as well as power consumption and heat load are logged into files.
+This can be helpful if a machine is crashing and you suspect a hardware failure.
 
-This tests are recommended when there is a belief that the machine might be crashing due to hardware failure.
-
-In order to run the tests and analyze the system status, follow these steps:
+To run the benchmark tests:
 1. Install all dependencies and tools:
     ```bash
     $ cd workstation_benchmarking_tests
