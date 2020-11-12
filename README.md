@@ -178,7 +178,7 @@ To run the benchmark tests:
     ```
     It will ask for several questions when finding the thermal sensors. Say `yes` to all of them.
     
-    Finally, it will ask if there is GPU. Say `yes` or `no` depending on your workstation.
+    Finally, you will be asked if you have a GPU. Say `yes` or `no` depending on your workstation.
     
 2. Run the desired tests:
     ```bash
