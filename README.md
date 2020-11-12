@@ -188,7 +188,7 @@ To run the benchmark tests:
    It will ask for the tests you want to run as well as how many time you want them to last. Possible options for tests are:
    `ram`, `cpu`, `gpu` and `all`.
 
-3. Find results of thermal load, power consumption and GPU, CPU and RAM usage in `./workstation_benchmarking_tests/result_logs`.
+3. Results of GPU, CPU and RAM usage, thermal load, and power consumption will be logged in `./workstation_benchmarking_tests/result_logs`.
 
 ## MGH logistics
 1. Request VPN access
