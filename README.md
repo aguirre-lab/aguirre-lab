@@ -173,7 +173,8 @@ This can be helpful if a machine is crashing and you suspect a hardware failure.
 To run the benchmark tests:
 1. Install all dependencies and tools:
     ```bash
-    $ cd workstation_benchmarking_tests
+    $ git clone git@github.com:aguirre-lab/aguirre-lab.git
+    $ cd aguirre-lab/workstation_benchmarking_tests
     $ ./install_benchmarks.sh
     ```
     You will be asked several questions as the script finds thermal sensors. Say `yes` to all of them.
