@@ -176,7 +176,7 @@ To run the benchmark tests:
     $ cd workstation_benchmarking_tests
     $ ./install_benchmarks.sh
     ```
-    It will ask for several questions when finding the thermal sensors. Say `yes` to all of them.
+    You will be asked several questions as the script finds thermal sensors. Say `yes` to all of them.
     
     Finally, you will be asked if you have a GPU. Say `yes` or `no` depending on your workstation.
     
