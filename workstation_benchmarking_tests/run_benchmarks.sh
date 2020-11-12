@@ -3,6 +3,10 @@
 # Script to run benchmarks for RAM, CPU and GPU
 echo -e "Choose what test you want to run (ram, cpu, gpu or all):"
 read -r type_benchmark
+if [ "$type_benchmark" = "cpu" ] || [ "$type_benchmark" = "gpu" ] || [ "$type_benchmark" = "all" ]; then
+  echo -e "For how much time do you want to run the tests (in seconds)?"
+  read -r time
+fi
 sudo modprobe msr
 mkdir result_logs
 
@@ -20,18 +24,18 @@ if [ "$type_benchmark" = "ram" ]; then
 elif [ "$type_benchmark" = "cpu" ]; then
   echo "Running CPU test..."
   # Start test
-  stress --cpu 16 --io 16 --timeout 600s
+  stress --cpu 16 --io 16 --timeout "$time"s
 
 elif [ "$type_benchmark" = "gpu" ]; then
   echo "Running GPU test..."
   # Start test
-  ./gpu_test/gpu_burn 600
+  ./gpu_test/gpu_burn "$time"
 
 elif [ "$type_benchmark" = "all" ]; then
   echo "Running all tests simultanoeusly..."
   # Start test
-  stress --cpu 16 --io 16 --timeout 600s &
-  ./gpu_test/gpu_burn 600
+  stress --cpu 16 --io 16 --timeout "$time"s &
+  ./gpu_test/gpu_burn "$time"
 
 else
   echo "Wrong test name. Availabe are: ram, cpu, gpu or all"
