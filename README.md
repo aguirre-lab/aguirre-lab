@@ -255,6 +255,32 @@ We recommend you use a Mac or Linux machine and a terminal.
 
 ERISOne is the MGB research computing cluster. We do not usually use it, but have documented how to set it up for a data science workflow: [`erisone documentation`](/erisone.md)
 
+### Workstation benchmarking tests
+Test and log your workstation's RAM, CPU, and GPU usage, power consumption, and heat load.
+
+This can be helpful if a machine is crashing and you suspect a hardware failure.
+
+To run the benchmark tests:
+1. Install all dependencies and tools:
+    ```bash
+    $ git clone git@github.com:aguirre-lab/aguirre-lab.git
+    $ cd aguirre-lab/workstation_benchmarking_tests
+    $ ./install_benchmarks.sh
+    ```
+    You will be asked several questions as the script finds thermal sensors. Say `yes` to all of them.
+    
+    Finally, you will be asked if you have a GPU. Say `yes` or `no` depending on your workstation.
+    
+2. Run the desired tests:
+    ```bash
+    $ cd workstation_benchmarking_tests
+    $ ./run_benchmarks.sh
+    ```
+   It will ask for the tests you want to run as well as how many time you want them to last. Possible options for tests are:
+   `ram`, `cpu`, `gpu` and `all`.
+
+3. Results of GPU, CPU and RAM usage, thermal load, and power consumption will be logged in `./workstation_benchmarking_tests/result_logs`.
+
 ## MGH logistics
 1. Request VPN access
     1. You need to log in to the Partners VPN if you SSH to a Partners machine, query the EDW, etc.. Request access at https://rc.partners.org/kb/article/2894
