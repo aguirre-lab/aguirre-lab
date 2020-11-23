@@ -215,22 +215,37 @@ Emails are for important decisions, record-keeping, and communication with peopl
 
 ## Meetings
 
-Start on time, prepare with agendas, end with action items, and finish early or on time.
-
 Every meeting has (1) an MGH calendar invite, and (2) a Zoom link.
 
-The calendar event is ground truth unless you hear otherwise.
+The calendar event is ground truth.
 
 ### Standup
 The `ml4icu` technical team meets for 15 min every few days to sync on progress and blockers.
 
-### Group meeting
-Every week our lab meets to update research progress, give a research talk, present a paper or method, etc.
+### Group meeting schedule
+Every week we meet to give a research talk, present a paper or method, etc.
 
-Our schedule is at this [Dropbox Paper link](https://paper.dropbox.com/doc/aguirre-lab-meeting-schedule--A7ss1A2g95~fn8JP6NEZdXj3Ag-HMHxFEmeMlrELTZaCxR3z).
+```
+| Date        | Speaker |
+|-------------|---------|
+| 2020 Nov 23 | Roger   |
+| 2020 Nov 30 | Eric    |
+| 2020 Dec 07 | Raimon  |
+| 2020 Dec 14 | Steven  |
+| 2020 Dec 21 | Erik    |
+| 2020 Dec 28 |         |
+| 2021 Jan 04 | Yirong  |
+| 2021 Jan 11 | Anand   |
+| 2021 Jan 18 | Roger   |
+| 2021 Jan 25 | Eric    |
+| 2021 Feb 01 | Raimon  |
+| 2021 Feb 08 | Steven  |
+| 2021 Feb 15 | Erik    |
+| 2021 Feb 22 | Yirong  |
+```
 
 ## Data
-Our data live in several places:
+Our data live in several places, all of which comply with MGH data security protocols:
 1. `mad3` and/or `landmark4`: MGB archival storage servers
 1. Workstations (see compute)
 1. Dropbox
