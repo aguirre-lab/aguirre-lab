@@ -226,29 +226,30 @@ The `ml4icu` technical team meets for 15 min every few days to sync on progress 
 Every week we meet to give a research talk, present a paper or method, etc.
 
 ```
-| Date        | Speaker    |
-|-------------|------------|
-| 2020 Nov 16 | Anand      |
-| 2020 Nov 23 | No meeting |
-| 2020 Nov 30 | Roger      |
-| 2020 Dec 07 | Eric       |
-| 2020 Dec 14 | Raimon     |
-| 2020 Dec 21 | Erik       |
-| 2020 Dec 28 | Steven     |
-| 2021 Jan 04 | Yirong     |
-| 2021 Jan 11 | Anand      |
-| 2021 Jan 18 | Eric       |
-| 2021 Jan 25 | Ridwan     |
-| 2021 Feb 01 | Roger      |
-| 2021 Feb 08 | Erik       |
-| 2021 Feb 15 | Raimon     |
-| 2021 Feb 22 | Steven     |
-| 2021 Mar 01 |            |
-| 2021 Mar 08 |            |
-| 2021 Mar 15 |            |
-| 2021 Mar 22 |            |
-| 2021 Mar 29 |            |
-| 2021 Apr 05 |            |
+| Date        | Speaker |
+|-------------|---------|
+| 2020 Nov 16 | Roger   |
+| 2020 Nov 23 | Eric    |
+| 2020 Nov 30 | Raimon  |
+| 2020 Dec 07 | Steven  |
+| 2020 Dec 14 | Erik    |
+| 2020 Dec 21 | Yirong  |
+| 2020 Dec 28 | Anand   |
+| 2021 Jan 04 | Eric    |
+| 2021 Jan 11 | Erik    |
+| 2021 Jan 18 | Raimon  |
+| 2021 Jan 25 | Ridwan  |
+| 2021 Feb 01 | Roger   |
+| 2021 Feb 08 | Steven  |
+| 2021 Feb 15 | Yirong  |
+| 2021 Feb 22 | Anand   |
+| 2021 Mar 01 | Eric    |
+| 2021 Mar 08 | Erik    |
+| 2021 Mar 15 | Raimon  |
+| 2021 Mar 22 | Ridwan  |
+| 2021 Mar 29 | Roger   |
+| 2021 Apr 05 | Steven  |
+| 2021 Apr 12 | Yirong  |
 ```
 
 ## Data
