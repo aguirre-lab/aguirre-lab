@@ -228,29 +228,30 @@ Every week we meet to give a research talk, present a paper or method, etc.
 ```
 | Date        | Speaker |
 |-------------|---------|
-| 2020 Nov 16 | Roger   |
-| 2020 Nov 23 | Eric    |
-| 2020 Nov 30 | Raimon  |
-| 2020 Dec 07 | Steven  |
-| 2020 Dec 14 | Erik    |
-| 2020 Dec 21 | Yirong  |
-| 2020 Dec 28 | Anand   |
-| 2021 Jan 04 | Eric    |
-| 2021 Jan 11 | Erik    |
-| 2021 Jan 18 | Raimon  |
-| 2021 Jan 25 | Ridwan  |
-| 2021 Feb 01 | Roger   |
-| 2021 Feb 08 | Steven  |
-| 2021 Feb 15 | Yirong  |
-| 2021 Feb 22 | Anand   |
-| 2021 Mar 01 | Eric    |
-| 2021 Mar 08 | Erik    |
-| 2021 Mar 15 | Raimon  |
-| 2021 Mar 22 | Ridwan  |
-| 2021 Mar 29 | Roger   |
-| 2021 Apr 05 | Steven  |
-| 2021 Apr 12 | Yirong  |
-```
+| 2020 Nov 16 | -       |
+| 2020 Nov 23 | Roger   |
+| 2020 Nov 30 | Eric    |
+| 2020 Dec 07 | Raimon  |
+| 2020 Dec 14 | Steven  |
+| 2020 Dec 21 | Erik    |
+| 2020 Dec 28 | Yirong  |
+| 2021 Jan 04 | Anand   |
+| 2021 Jan 11 | Eric    |
+| 2021 Jan 18 | Erik    |
+| 2021 Jan 25 | Raimon  |
+| 2021 Feb 01 | Ridwan  |
+| 2021 Feb 08 | Roger   |
+| 2021 Feb 15 | Steven  |
+| 2021 Feb 22 | Yirong  |
+| 2021 Mar 01 | Anand   |
+| 2021 Mar 08 | Eric    |
+| 2021 Mar 15 | Erik    |
+| 2021 Mar 22 | Raimon  |
+| 2021 Mar 29 | Ridwan  |
+| 2021 Apr 05 | Roger   |
+| 2021 Apr 12 | Steven  |
+| 2021 Apr 19 | Yirong  |
+``` 
 
 ## Data
 Our data live in several places, all of which comply with MGH data security protocols:
