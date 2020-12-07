@@ -134,9 +134,11 @@ The following tests compose the linting pipeline:
 | gitlint                         | Checks commit messages                                                      |
 
 This pipeline is called on every commit. However, if you want to pass a particular 
-test of the pipeline at any time, you can run: 
+test of the pipeline at any time, you can run
 
-```pre-commit run <name of the test>```
+```
+pre-commit run <name of the test>
+```
 
 
 #### Dealing with the hooks
@@ -146,28 +148,35 @@ a particular situation. Some tests may even contradict each other.
 
 If you find yourself in one of these situations, you can to skip a particular test run by doing:
 
-```$ SKIP=pylint git commit -m 'this is a special commit' ```
+```
+$ SKIP=pylint git commit -m 'this is a special commit'
+```
 
 To skip multiple tests:
-```$ SKIP=pylint,flake8 git commit -m 'this is a special commit' ```
+```
+$ SKIP=pylint,flake8 git commit -m 'this is a special commit'
+```
 
 To skip all the tests (this should hardly ever happen):
-```$ git commit -m 'this is a very special commit' --no-verify ```
+```
+$ git commit -m 'this is a very special commit' --no-verify
+```
 
 ### Pull requests (PRs)
 To contribute code or documentation changes from your branch to the `master` branch in the repo, open a PR.
 
-New PRs follow our [template](.github/pull_request_template.md).
+Before you submit a PR, review these [best practices for participating in a code review](https://mtlynch.io/code-review-love/).
 
-List the issues your PR closes. This should auto-populated the "linked issues" section on the right nav bar.
+New PRs follow our [template](.github/pull_request_template.md):
+- List the issues your PR closes. This auto-populates the "linked issues" section on the right nav bar.
+- Describe the major changes in bullet points.
+- Ensure you check all of the quality control boxes.
 
-Describe the major changes in bullet points.
-
-Always start your PR as a draft. Do not convert the draft into a full PR until your work is finalized and ready for review. This is for two reasons. First, automated code tests run on full PRs and consume the finite amount of run time that GitHub provides us. Second, reviewers should only dedicate time for reviewing your PR when it is ready.
+Start your PR as a draft. When your PR is finalized and ready for review, convert it from a draft to a pull PR.
 
 Assign at least one reviewer.
 
-Reviewers approve PRs before code merges to `master`. They have 48 hours. If a review is stale, remind the reviewer.
+Reviewers approve PRs before code merges to `master`. Our team strives for a turnaround time of 24-48 hours. If a review is stale, remind the reviewer. If the review is too complex for this turnaround time, the PR is too large and should be divided into smaller PRs.
 
 When PRs are approved, all commits are "squash merged", e.g. combine all commits from the head branch into a single commit in the base branch. Also, the branch is automatically deleted.
 
