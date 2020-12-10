@@ -14,19 +14,21 @@
 - [IRB coverage](https://paper.dropbox.com/doc/IRB-coverage--A7uo~yh4R0BWfUIVP3aAtb_MAg-ypV58gm96PA8WeNy09XLM)
 
 ## Stack
-In the technology world, a "stack" is the set of tools, libraries, and packages one or one's team uses.
+A "stack" is a set of tools, libraries, and packages a team uses.
 
 Read [`the missing semester of your CS education`](https://missing.csail.mit.edu) to learn basic proficiency with the tools we use every day.
 
-We use macOS and Ubuntu Linux. Our GPU workstations and servers run the latter.
+We use our workstations and servers via the command line. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, we like `tmux`. We do not use graphical remote desktop software.
 
-We interact with our workstations and servers through the command line. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, we like `tmux`. We do not use graphical remote desktop software.
+Our workstations and servers run Ubuntu linux.
 
-Most of our technical work and project management is in GitHub: version control, documentation, code review, issues, etc.
+We manage code and projects in GitHub: version control, documentation, code review, issues, etc.
+
+Our data parsing, visualizing, and modeling pipeline is [`ml4c3`](https://github.com/aguirre-lab/ml4c3). We use Docker to ensure our team uses identical development environments, but our machines also come with Miniconda installed. Read [the docs](miniconda.md) to set up your account properly so you use the already-installed Miniconda software.
 
 We use Dropbox to store results, smaller data sets, manuscripts, etc. [`Here is a guide`](dropbox.md) to setting up Dropbox on a Linux machine.
 
-We use Keynote for presentations.
+We use Keynote or Google Slides for presentations.
 
 We communicate via Slack, email, and Zoom.
 
