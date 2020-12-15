@@ -241,24 +241,24 @@ Every week we meet to give a research talk, present a paper or method, etc.
 |-------------|---------|
 | 2020 Dec 07 | Roger   |
 | 2020 Dec 14 | Eric    |
-| 2020 Dec 21 | Raimon  |
-| 2020 Dec 28 | Steven  |
-| 2021 Jan 04 | Erik    |
-| 2021 Jan 11 | Yirong  |
-| 2021 Jan 18 | Anand   |
-| 2021 Jan 25 | Eric    |
-| 2021 Feb 01 | Erik    |
-| 2021 Feb 08 | Raimon  |
-| 2021 Feb 15 | Ridwan  |
-| 2021 Feb 22 | Roger   |
-| 2021 Mar 01 | Steven  |
-| 2021 Mar 08 | Yirong  |
-| 2021 Mar 15 | Anand   |
-| 2021 Mar 22 | Eric    |
-| 2021 Mar 29 | Erik    |
-| 2021 Apr 05 | Raimon  |
-| 2021 Apr 12 | Ridwan  |
-| 2021 Apr 19 | Roger   |
+| 2020 Dec 21 | --      |
+| 2020 Dec 28 | --      |
+| 2021 Jan 04 | Raimon  |
+| 2021 Jan 11 | Steven  |
+| 2021 Jan 18 | Erik    |
+| 2021 Jan 25 | Yirong  |
+| 2021 Feb 01 | Anand   |
+| 2021 Feb 08 | Eric    |
+| 2021 Feb 15 | Erik    |
+| 2021 Feb 22 | Raimon  |
+| 2021 Mar 01 | Ridwan  |
+| 2021 Mar 08 | Roger   |
+| 2021 Mar 15 | Steven  |
+| 2021 Mar 22 | Yirong  |
+| 2021 Mar 29 | Anand   |
+| 2021 Apr 05 | Eric    |
+| 2021 Apr 12 | Erik    |
+| 2021 Apr 19 | Raimon  |
 ```
 
 ## Data
