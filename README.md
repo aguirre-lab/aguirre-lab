@@ -14,69 +14,67 @@
 - [IRB coverage](https://paper.dropbox.com/doc/IRB-coverage--A7uo~yh4R0BWfUIVP3aAtb_MAg-ypV58gm96PA8WeNy09XLM)
 
 ## Stack
-A "stack" is a set of tools, libraries, and packages a team uses.
-
 Read [`the missing semester of your CS education`](https://missing.csail.mit.edu) to learn basic proficiency with the tools we use every day.
 
-We use our workstations and servers via the command line. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, we like `tmux`. We do not use graphical remote desktop software.
+Our workstations and servers run Ubuntu.
 
-Our workstations and servers run Ubuntu linux.
+We interact with our workstations and servers via the shell over `ssh`. [`iTerm2`](https://iterm2.com) is especially good for macOS. To manage sessions and panes, many of us use `tmux`. We do not use graphical remote desktop software.
 
-We manage code and projects in GitHub: version control, documentation, code review, issues, etc.
+Our team develops and uses a data parsing, visualization, and modeling pipeline called [`ml4c3`](https://github.com/aguirre-lab/ml4c3). We use Docker to ensure identical development environments. Miniconda is also installed on every workstation (see [the docs](miniconda.md)).
 
-Our data parsing, visualizing, and modeling pipeline is [`ml4c3`](https://github.com/aguirre-lab/ml4c3). We use Docker to ensure our team uses identical development environments, but our machines also come with Miniconda installed. Read [the docs](miniconda.md) to set up your account properly so you use the already-installed Miniconda software.
+We manage code and projects in GitHub: version control, documentation, code review, issues, etc. *Data* is not stored on GitHub.
 
-We use Dropbox to store results, smaller data sets, manuscripts, etc. [`Here is a guide`](dropbox.md) to setting up Dropbox on a Linux machine.
+Communication around tasks is primarily via GitHub. We do this to document shareable conversations, link discussions to code, and avoid interrupting "deep work". [Read more about why aysnchronous communication is good](https://blog.doist.com/asynchronous-communication/).
 
-We use Keynote or Google Slides for presentations.
+Sometimes sychronous communication is good. We chat on Slack and meet on Zoom, but we minimize email. This excerpt from the above blog post explains why:
 
-We communicate via Slack, email, and Zoom.
+> Don’t use email internally. While email can be used asynchronously, it also locks information inside people’s inboxes where no one else can find it. When people can’t find the information they need, collaboration becomes much less efficient.
+
+We use Dropbox to store results, smaller data sets, manuscripts, etc. [`Here is a guide`](dropbox.md) to setting up Dropbox on a Linux machine. Dropbox a) lets us share PHI, b) backs up files automatically, and c) syncs files across machines. Code is *not* stored on Dropbox; code is stored in GitHub.
 
 We schedule meetings on our MGH calendars (Outlook).
 
 ## GitHub
 
-As a biomedical data science group, we use GitHub for most of our workflow.
+As a data science and software engineering group, we use GitHub for most of our workflow.
 
-### Getting started
+### Overview
 1. DO NOT SHARE PHI ON GITHUB!
-1. Do not share code via Dropbox, email, or any other mechanism than GitHub.
+1. Code is only shared via GitHub. Do not share code via Dropbox, email, or any other mechanism.
 1. Our GitHub organization is [`https://github.com/aguirre-lab`](https://github.com/aguirre-lab).
 1. Every project has a (1) repo (`$PROJECT_NAME`), (2) board (see below), (3) Slack channel to discuss the project (`#$PROJECT_NAME`), and (4) Slack channel for GitHub notifications for that repo (`#PROJECT_NAME-repo`).
-1. Every repo starts out private. Open-sourcing of code requires a discussion with Aaron.
-1. Every repo has a `README`.
-1. Every repo has a [BSD 3-clause license](https://choosealicense.com/licenses/bsd-3-clause/).
+1. Every repo starts out private. Open-sourcing of code requires a discussion with the PI and their collaborating PIs.
+1. Every repo has a `README` and/or a wiki containing documentation.
+1. Use the [BSD 3-clause license](https://choosealicense.com/licenses/bsd-3-clause/) for your repo.
+1. Create branches, commits, and PRs as early as possible. It is never too early to push your work to your branch.
+1. Do not work too long on local without committing code. Push early and often.
 
 ### Issues
-Every task has an issue, and each issue is labeled to help us stay organized.
+Every task has an issue, and each issue has 1+ labels.
 
-New issues are created using one of our three [issue templates](.github/ISSUE_TEMPLATE): 1) new feature request or enhancement, 2) bug report, or 3) question.
+New issues are created with our [issue templates](.github/ISSUE_TEMPLATE): 1) new feature request or enhancement, 2) data or modeling task, 3) question ,or 4) bug report.
 
-Good issues are clearly written and small enough to be addressed in one sprint of work (1-5 days).
+Good issues are clearly written and small enough to be addressed in a few days. Several small tasks can be bundled into one issue.
 
-Issues should have an assignee who owns completion.
+Issues (aside from questions) should have one person who owns responsibility for completion.
 
-Issues should be labeled so they are easier to organize.
-
-We usually close issues via PR.
+We prefer to close issues via pull request (PR; see below).
 
 ### Boards
-We track issues and PRs on Kanban-style [project boards](https://github.com/orgs/aguirre-lab/projects).
+We organize issues and PRs by project using [boards](https://github.com/orgs/aguirre-lab/projects).
 
-If a new issue is low priority, it is added to the `To do (backlog)` column.
+New issues go to the `To do (backlog)` column.
 
-If a new issue is high priority, it is added to the `To do (current sprint)` column and addressed the current week.
+If a new issue is a priority, it is moved to the `To do (current sprint)` column and addressed the current week.
 
-Issues that are being actively worked on are moved to the `In progress (issues)` column.
+Issues that are actively being worked on are moved to the `In progress (issues)` column.
 
 Issues do not go in `In review (PRs)` column. Only PRs go there.
 
 ### Branches
-Generally, create a branch for each issue and work on it until the code is ready to be merged with the master.
-Name your branch with your initials, a description related to the issue, and dashes between words. 
+When you start to work on an issue, create a new branch and work on it until the code is ready to be merged with the master.
 
-To create the branch and push it to the repo, follow these two steps:
-
+Name your branch with your initials, a description related to the issue, and dashes between words:
 ```bash
 $ git checkout -b er-fix-grid-ecg-plot
 $ git push -u origin er-fix-grid-ecg-plot
@@ -89,15 +87,19 @@ $ git add <file_1> <file2_> <file_n>
 $ git commit -m <message>
 $ git push 
 ```
-We do not enforce strict commit message style, but try to follow good practices as described in this blog post: https://chris.beams.io/posts/git-commit/#capitalize.
-Moreover, it is strongly encouraged to add the issue id at each commit message, so commits are tracked within the issue:
+We do not enforce strict commit message style, but try to follow good practices as 
+described in [this blog post](https://chris.beams.io/posts/git-commit/#capitalize). 
+Moreover, it is strongly encouraged to add the issue id at each commit message, so
+commits are tracked within the issue:
 ```bash
 $ git commit -m <<message> Ref #<issue id>>
 ```
 
 ### Pre-commit hooks
-The repo is setup so that whenever you commit a file, the linting pipeline is run.
-If the tests are passed, then the files are commited. If they aren't the files won't be allowed to be commited.
+We use `pre-commit` to automate a linting pipeline to run each time you call `git commit`.
+
+`pre-commit` hooks must all pass (or the user must ignore them via the `-n` flag) for
+files to be committed.
 
 #### Linting
 Linting the code means keeping the code readable and in a good format (Similar to
@@ -141,7 +143,6 @@ test of the pipeline at any time, you can run
 ```
 pre-commit run <name of the test>
 ```
-
 
 #### Dealing with the hooks
 Normally, all tests should pass before you commit. However, sometimes
@@ -187,33 +188,26 @@ We encourage small and fast PRs that solve one or a few issues. They are easier 
 ### Code reviews
 Reviewing other's code, and having your code reviewed by others, is an important part of ensuring our code is excellent. It also helps us improve how we communicate ideas -- in code, in comments as a reviewer, and in responses to reviewer comments.
 
-Code reviewers focus on implementation and style that are not caught by debugging or `pre-commit` hooks.
-
-A few key points:
+Code reviewers focus on implementation and style that are not caught by debugging or `pre-commit` hooks:
 1. Are variables clearly named and self-explanatory? We avoid short names or acronyms that lack description.
 1. Are arguments type-hinted?
 1. Is code appropriately modularized? If code is repeated, should it be a function instead?
 1. Is code in the appropriate scope for that script? Should the function be somewhere else in the repo?
 1. Is the functionality performant? Is there a faster but not substantially more challenging implementation?
 
-The onus for code to work is on the developer who submits the PR. Automated tests also help with this.
+The developer who submits the PR is responsible for code to run without errors, and to
+not break other functionality in the repo. Automated tests also help with this.
 
-Reviewing code is hard until you spend some time with our group to understand our style. We recommend you look at the reviews from old merged PRs to understand what is expected of a reviewer.
+To learn how to review code, you must spend some time with our group to understand our
+style. We recommend you look at the reviews from merged PRs to understand expectations.
 
 ## Wiki
-Our [Wiki](https://github.com/aguirre-lab/ml4c3/wiki) contains the documentation related to the work done in aguirre-lab repos, 
-specially `ml4c3` repo. There, information about data sources, flows and storage, as well as all modes, tools and scripts is presented.
+Our [Wiki](https://github.com/aguirre-lab/ml4c3/wiki) contains the documentation for 
+`ml4c3`, data sources, and more.
 
-If you are interested in contributing to our wiki, you can do so. However, consider the following:
-
-**MOST IMPORTANT: Do not add changes directly into the wiki**
-
-If you want to add or change the documentation on the wiki, use our [wiki repository](https://github.com/aguirre-lab/ml4c3-wiki/)
-From there, create an issue, a branch and commit your changes. Once the changes are merged with master via a pull request,
-an automated pipeline will synchronize those changes with our wiki.
-
-If you don't have push access to our wiki repo, fork it and submit a pull request. We will review it and add your changes.
-
+**Do not directly edit the wiki in the `ml4c3` wiki!** Instead, submit issues and PRs 
+to our [wiki repo](https://github.com/aguirre-lab/ml4c3-wiki/). The `ml4c3` wiki is 
+automatically updated from the `master` branch of the wiki repo.
 
 ## Slack
 Join [`aguirre-lab.slack.com`](aguirre-lab.slack.com) with your MGH email.
@@ -222,19 +216,16 @@ Slack is for conversation and notifications from GitHub.
 
 DO NOT SHARE PHI VIA SLACK.
 
-Emails are for important decisions, record-keeping, and communication with people not in our Slack workspace. You may email PHI with your MGH account, but do so only if absolutely necessary, and use [send secure](https://rc.partners.org/kb/article/2939).
-
 ## Meetings
 
-Every meeting has (1) an MGH calendar invite, and (2) a Zoom link.
-
+Every meeting has (1) an MGH calendar invite, and (2) a Zoom link. 
 The calendar event is ground truth.
 
 ### Standup
-The `ml4icu` technical team meets for 15 min every few days to sync on progress and blockers.
+Our engineering and data science team meets for 15m twice a week to share progress and blockers.
 
 ### Group meeting schedule
-Every week we meet to give a research talk, present a paper or method, etc.
+We meet weekly. A group member presents a research talk, paper, or method.
 
 ```
 | Date        | Speaker |
@@ -262,7 +253,7 @@ Every week we meet to give a research talk, present a paper or method, etc.
 ```
 
 ## Data
-Our data live in several places, all of which comply with MGH data security protocols:
+Data live in several places, all of which comply with MGH data security protocols:
 1. `mad3` and/or `landmark4`: MGB archival storage servers
 1. Workstations (see compute)
 1. Dropbox
