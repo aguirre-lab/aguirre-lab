@@ -36,20 +36,27 @@ We schedule meetings on our MGH calendars (Outlook).
 
 ## GitHub
 
-As a data science and software engineering group, we use GitHub for most of our workflow.
-
-### Overview
+As a data science and software engineering group, we spend most of our time on GitHub.
+Here are some of our general practices:
 1. DO NOT SHARE PHI ON GITHUB!
-1. Code is only shared via GitHub. Do not share code via Dropbox, email, or any other mechanism.
+1. Code is stored and shared via GitHub. Do not store or share code via Dropbox, email, or any other mechanism.
 1. Our GitHub organization is [`https://github.com/aguirre-lab`](https://github.com/aguirre-lab).
-1. Every project has a (1) repo (`$PROJECT_NAME`), (2) board (see below), (3) Slack channel to discuss the project (`#$PROJECT_NAME`), and (4) Slack channel for GitHub notifications for that repo (`#PROJECT_NAME-repo`).
-1. Every repo starts out private. Open-sourcing of code requires a discussion with the PI and their collaborating PIs.
-1. Every repo has a `README` and/or a wiki containing documentation.
-1. Use the [BSD 3-clause license](https://choosealicense.com/licenses/bsd-3-clause/) for your repo.
-1. Create branches, commits, and PRs as early as possible. It is never too early to push your work to your branch.
-1. Do not work too long on local without committing code. Push early and often.
+1. Our main repo is [`ml4c3`](https://github.com/aguirre-lab/ml4c3). Your work should almost always be an issue, branch, and eventually PR back into `ml4c3`. See _workflow_ below.
+1. If your work is truly out of scope for `ml4c3`, open a new private repo in `aguirre-lab`.
+1. Repos are private. Open-sourcing of code requires a discussion with the PI and their collaborating PIs.
+1. Code is documented in the repo `README` and/or a wiki.
+1. We use the [BSD 3-clause license](https://choosealicense.com/licenses/bsd-3-clause/).
+1. Create branches, push commits, and submit PRs as early as possible.
 
-### Issues
+### Workflow
+1. Open an issue. Or, if you are assigned an issue, move it from `backlog` or `to do` to `in progress`.
+1. Check out a branch.
+1. Commit changes early and often.
+1. When the code is ready to merge, submit a PR.
+
+Each step of the above workflow is described more below.
+
+### 1. Issues
 Every task has an issue, and each issue has 1+ labels.
 
 New issues are created with our [issue templates](.github/ISSUE_TEMPLATE): 1) new feature request or enhancement, 2) data or modeling task, 3) question ,or 4) bug report.
@@ -60,18 +67,19 @@ Issues (aside from questions) should have one person who owns responsibility for
 
 We prefer to close issues via pull request (PR; see below).
 
-### Boards
 We organize issues and PRs by project using [boards](https://github.com/orgs/aguirre-lab/projects).
+
+Boards are incredibly powerful because it allows anyone on the team to quickly understand what everyone else is working on, identify blockers, and assess progress.
 
 New issues go to the `To do (backlog)` column.
 
-If a new issue is a priority, it is moved to the `To do (current sprint)` column and addressed the current week.
+If a new issue is a priority, it is moved to the `To do (current sprint)` column and addressed that week.
 
 Issues that are actively being worked on are moved to the `In progress (issues)` column.
 
 Issues do not go in `In review (PRs)` column. Only PRs go there.
 
-### Branches
+### 2. Branches
 When you start to work on an issue, create a new branch and work on it until the code is ready to be merged with the master.
 
 Name your branch with your initials, a description related to the issue, and dashes between words:
@@ -80,7 +88,7 @@ $ git checkout -b er-fix-grid-ecg-plot
 $ git push -u origin er-fix-grid-ecg-plot
 ```
 
-### Commit messages
+### 3. Commit messages
 Commit changes by adding the corresponding files and commit them. If you also want to see the changes on the repo, push them:
 ```bash
 $ git add <file_1> <file2_> <file_n>
@@ -95,7 +103,7 @@ commits are tracked within the issue:
 $ git commit -m <<message> Ref #<issue id>>
 ```
 
-### Pre-commit hooks
+### 3b. Pre-commit hooks
 We use `pre-commit` to automate a linting pipeline to run each time you call `git commit`.
 
 `pre-commit` hooks must all pass (or the user must ignore them via the `-n` flag) for
@@ -165,7 +173,7 @@ To skip all the tests (this should hardly ever happen):
 $ git commit -m 'this is a very special commit' --no-verify
 ```
 
-### Pull requests (PRs)
+### 4. Pull requests (PRs)
 To contribute code or documentation changes from your branch to the `master` branch in the repo, open a PR.
 
 Before you submit a PR, review these [best practices for participating in a code review](https://mtlynch.io/code-review-love/).
