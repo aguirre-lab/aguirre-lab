@@ -7,16 +7,10 @@ assignees: ''
 
 ---
 
-<!--- Provide a general summary of the issue in the Title above -->
+## What and why
 
-## Why it Matters
-<!--- Describe why this new feature or enhancement should be implemented, etc -->
+## Solution(s)
 
-## Possible Solution
-<!-- High-level overview of how you propose to address -->
+## Acceptance criteria
 
-## Acceptance Criteria
-<!--- Unambiguous milestones; if any are incomplete, the PR cannot be merged -->
-
-## Blocked by or Pending
-<!--- Links to other issues or PRs that block this issue and should be addressed or merged first. Also, label this issue with "`blocked 🚫`" -->
+## Blocked by or pending
