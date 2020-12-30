@@ -74,6 +74,7 @@ We use `pre-commit` to automate a linting pipeline to run each time you call `gi
 
 `pre-commit` hooks must all pass for files to be committed.
 
+Some hooks are difficult to completely pass, or are imperfect (yet still helpful).
 Hooks that may be skipped (with the `-n` flag in `git commit`) are:
 ```
 pylint
