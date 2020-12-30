@@ -6,7 +6,6 @@ Closes #
 - [ ] todo: 
 
 ## Checklist
-## Checklist
 - [x] The following are complete:
     - Added or revised tests if appropriate.
     - If new packages are installed, `requirements.txt` is updated.
