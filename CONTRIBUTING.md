@@ -27,13 +27,17 @@ The rest of the documentation describes each step in more detail.
 ## :warning: Issues
 Every task has an issue, and each issue has 1+ labels.
 
-New issues are created with our [issue templates](.github/ISSUE_TEMPLATE): 1) new feature request or enhancement, 2) data or modeling task, 3) question ,or 4) bug report.
+New issues are created with one of our [issue templates](.github/ISSUE_TEMPLATE):
+1. new feature request or enhancement
+1. data or modeling task
+1. question
+1. bug report
 
 Good issues are clearly written and small enough to be addressed in a few days. Several small tasks can be bundled into one issue.
 
-Issues (aside from questions) should have one person who owns responsibility for completion.
+Issues should have one person who owns responsibility for completion.
 
-We prefer to close issues via pull request (PR; see below).
+We prefer to close issues via PRs (see _Pull Requests_ below).
 
 We organize issues and PRs by project using [boards](https://github.com/orgs/aguirre-lab/projects).
 
@@ -56,6 +60,9 @@ $ git checkout -b er-fix-grid-ecg-plot
 $ git push -u origin er-fix-grid-ecg-plot
 ```
 
+Do not commit and push directly to `master`. Exceptions are allowed for minor typos, but
+generally it is better to open a PR even for tiny changes.
+
 ## :speech_balloon: Commit messages
 1. Use the present tense ("Add feature" not "Added feature")
 1. Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
@@ -65,8 +72,13 @@ $ git push -u origin er-fix-grid-ecg-plot
 ## :white_check_mark: Pre-commit hooks
 We use `pre-commit` to automate a linting pipeline to run each time you call `git commit`.
 
-`pre-commit` hooks must all pass (or the user must ignore them via the `-n` flag) for
-files to be committed.
+`pre-commit` hooks must all pass for files to be committed.
+
+Hooks that may be skipped (with the `-n` flag in `git commit`) are:
+```
+pylint
+mypy
+```
 
 ### Linting
 Linting the code means keeping the code readable and in a good format (Similar to
@@ -133,27 +145,66 @@ $ git commit -m 'this is a very special commit' --no-verify
 ```
 
 ## :rocket: Pull requests
-To contribute code or documentation changes from your branch to the `master` branch in the repo, open a PR.
+You've made great progress on an issue, and code in your branch is ready to merge with
+`master`. Time to submit a PR!
 
-Before you submit a PR, review these [best practices for participating in a code review](https://mtlynch.io/code-review-love/).
+> PRs are units of technical contribution. We think the number of PRs you submit, and the speed with which you submit them, correlate a lot with productivity and engagement.
 
-New PRs follow our [template](.github/pull_request_template.md):
-- List the issues your PR closes. This auto-populates the "linked issues" section on the right nav bar.
-- Describe the major changes in bullet points.
-- Ensure you check all of the quality control boxes.
+Before you submit a PR, review these [best practices for participating in a code review](https://mtlynch.io/code-review-love/). 
 
-Start your PR as a draft. When your PR is finalized and ready for review, convert it from a draft to a pull PR.
+### Our PRs are usually one of the following types:
+#### 1. Just a heads up
+**How it works:** Submit a PR and immediately merge it yourself without others’ review.  
 
-Assign at least one reviewer.
+**When to use it:** When you’re making a change so uncontroversial or straight forward that no review is required, but you want to let your teammates know that you’ve made the change. Dependency bumps are a good use case.
 
-Reviewers approve PRs before code merges to `master`. Our team strives for a turnaround time of 24-48 hours. If a review is stale, remind the reviewer. If the review is too complex for this turnaround time, the PR is too large and should be divided into smaller PRs.
+#### 2. Work in progress (WIP)
+**How it works:** Create a PR as a draft. Optionally add :warning: emoji and “DO NOT MERGE” in bold if you’re paranoid.
+
+**When to use it:** When you’ve started a new feature, document, or bug fix, that’s not quite ready for others to review, but you want to let your teammates know that you’re working on the feature. This can be used to prevent the duplication of effort, save work that you’ve started, or complement your team’s workflow.
+
+#### 3. Early feedback
+**How it works:** Roughly spike out a feature by creating a proof of concept or rough outline that expressed your idea in its final form.
+
+**When to use it:** When you want feedback on your general approach or the idea itself. Is this a dumb idea? Is there a better way to do this? The content of the pull request exists to convey the idea, and will likely not be the final implementation. This may start as a WIP and may end with a line-by-line review.
+
+#### 4. Detailed review
+**How it works**: Submit a feature-complete pull request and cc relevant teams, asking for their review. Team members will comment line-by-line and re-review as you implement their changes
+
+**When to use it:** When you’re ready for your work to merge into `master`, and you want
+thorough feedback on your code. It may have been started as a WIP or for early feedback, but now it is mature.
+
+### How to submit a PR
+New PRs follow our [template](.github/pull_request_template.md).
+
+Here are the steps for a successful PR:
+
+1. In the body of the PR, list the issues your PR closes. For each issue, on a new line, write `Closes #<issue number>`.  
+    This auto-populates the "linked issues" section on the right nav bar:
+    ```
+    Closes #502.
+    Closes #503.
+    ```
+1. In the body of the PR, describe the major changes in bullet points:
+    ```
+    1. Speeds up iteration through patient MRNs by replacing iterrows with apply and 
+       lambda functions.
+    2. Makes MRN parsing more robust to float types, as MRNs from some CSV files may 
+       not correctly cast to ints when calling pd.read_csv().
+    ```
+1. In the body of the PR, review the quality control checklist, and check it off when all tasks are complete.
+1. Assign yourself and any colleagues who wrote the code to the PR.
+1. Add the PR to the appropriate project, and label it (e.g. `infrastructure 🚇`).
+1. For most PRs (see _types of PRs_ above), assign at least one reviewer.
+
+## :construction: Code reviews
+Reviewing other's code, and having your code reviewed by others, is an important part of ensuring our code is excellent. It also helps us improve how we communicate ideas -- in code, in comments as a reviewer, and in responses to reviewer comments.
+
+Reviewers approve PRs before code merges to `master`. Our team strives for a turnaround time of 24-48 hours. If a review is stale, remind the reviewer. If the review is too complex for this turnaround time, the PR may be too big and should be divided into smaller PRs.
 
 When PRs are approved, all commits are "squash merged", e.g. combine all commits from the head branch into a single commit in the base branch. Also, the branch is automatically deleted.
 
 We encourage small and fast PRs that solve one or a few issues. They are easier to write, review, and merge. Hence, they are also less likely to introduce catastrophic bugs.
-
-## :construction: Code reviews
-Reviewing other's code, and having your code reviewed by others, is an important part of ensuring our code is excellent. It also helps us improve how we communicate ideas -- in code, in comments as a reviewer, and in responses to reviewer comments.
 
 Code reviewers focus on implementation and style that are not caught by debugging or `pre-commit` hooks:
 1. Are variables clearly named and self-explanatory? We avoid short names or acronyms that lack description.
