@@ -78,16 +78,16 @@ Each time you call `git commit`, the following hooks are run to lint the code so
 
 | Hook name                       | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
-| check-executables-have-shebangs | Ensures that (non-binary) executables have a shebang.                       |
-| check-symlinks                  | Checks for symlinks which do not point to anything.                         |
-| check-toml                      | This hook checks xml files for parseable syntax.                            |
-| check-yaml                      | This hook checks yaml files for parseable syntax.                           |
-| debug-statements                | Check for debugger imports and py37+ `breakpoint()` calls in python source. |
+| check-executables-have-shebangs | Ensures that (non-binary) executables have a shebang                        |
+| check-symlinks                  | Checks for symlinks which do not point to anything                          |
+| check-toml                       | This hook checks xml files for parseable syntax                            |
+| check-yaml                      | This hook checks yaml files for parseable syntax                            |
+| debug-statements                | Check for debugger imports and py37+ `breakpoint()` calls in python source  |
 | end-of-file-fixer               | Ensures that a file is either empty, or ends with one newline.              |
-| mixed-line-ending               | Replaces ; endings with \n                                                  |
+| mixed-line-ending               | Replaces `;` endings with `\n`                                              |
 | name-tests-test                 | This verifies that test files are named correctly                           |
 | no-commit-to-branch             | Don't commit to branch (master)                                             |
-| trailing-whitespace             | This hook trims trailing whitespace.                                        |
+| trailing-whitespace             | This hook trims trailing whitespace                                         |
 | python-use-type-annotations     | Enforce that python3.6+ type annotations are used instead of type comments  |
 | python-no-log-warn              | A quick check for the deprecated `.warn()` method of python loggers         |
 | rst-backticks                   | Detect common mistake of using single backticks when writing rst            |
