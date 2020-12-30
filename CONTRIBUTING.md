@@ -5,7 +5,7 @@ This page describes how to contribute to the `ml4c3` repo.
 1. [:warning: Issues](#warning-issues)
 1. [:evergreen_tree: Branches](#evergreen_tree-branches)
 1. [:speech_balloon: Commit messages](#speech_balloon-commit-messages)
-1. [:white_check_mark: Pre-commit hooks](#white_check_mark-pre-commit-hooks)
+1. [:white_check_mark: Pre-commit](#white_check_mark-pre-commit)
 1. [:rocket: Pull requests](#rocket-pull-requests)
 1. [:construction: Code reviews](#construction-code-reviews)
 1. [:globe_with_meridians: Wiki](#globe_with_meridians-wiki)
@@ -69,29 +69,10 @@ generally it is better to open a PR even for tiny changes.
 1. Limit the first line to 72 characters or less
 1. Reference issues and pull requests liberally after the first line
 
-## :white_check_mark: Pre-commit hooks
-We use `pre-commit` to automate a linting pipeline to run each time you call `git commit`.
+## :white_check_mark: Pre-commit
+We use `pre-commit` to automate a linting pipeline. Each time you call `git commit`, the following hooks are run to lint the code so it is readable and consistently formatted:
 
-`pre-commit` hooks must all pass for files to be committed.
-
-Some hooks are difficult to completely pass, or are imperfect (yet still helpful).
-Hooks that may be skipped (with the `-n` flag in `git commit`) are:
-```
-pylint
-mypy
-```
-
-### Linting
-Linting the code means keeping the code readable and in a good format (Similar to
-what [PEP8](https://www.python.org/dev/peps/pep-0008/) dictates). To do that,
-a pipeline has been configured to run formatting tests. This pipeline will
-check your code for formatting mistakes. It will also reformat some of your
-code automatically so that you don't have to do it yourself, but some
-modifications will still need to be done manually.
-
-The following tests compose the linting pipeline:
-
-| Test name                       | Short description                                                           |
+| Hook name                       | Short description                                                           |
 |---------------------------------|-----------------------------------------------------------------------------|
 | check-executables-have-shebangs | Ensures that (non-binary) executables have a shebang.                       |
 | check-symlinks                  | Checks for symlinks which do not point to anything.                         |
@@ -117,33 +98,31 @@ The following tests compose the linting pipeline:
 | mypy                            | Checks python's typing                                                      |
 | gitlint                         | Checks commit messages                                                      |
 
-This pipeline is called on every commit. However, if you want to pass a particular 
-test of the pipeline at any time, you can run
+If you want to run a specific hook before committing, you can run
 
 ```
 pre-commit run <name of the test>
 ```
 
-### `pre-commit` hooks
-Normally, all tests should pass before you commit. However, sometimes
-tests are too strict or they ask for somethings that can't be made in
-a particular situation. Some tests may even contradict each other.
-
-If you find yourself in one of these situations, you can to skip a particular test run by doing:
+### Skipping hooks
+Normally, all hooks should pass before you commit. However, some are too strict 
+or may even contradict each other. You can skip a particular hook via:
 
 ```
 $ SKIP=pylint git commit -m 'this is a special commit'
 ```
 
-To skip multiple tests:
+To skip multiple hooks:
 ```
 $ SKIP=pylint,flake8 git commit -m 'this is a special commit'
 ```
 
-To skip all the tests (this should hardly ever happen):
+To skip all hooks:
 ```
 $ git commit -m 'this is a very special commit' --no-verify
 ```
+
+> You can use `-n` instead of `--no-verify`
 
 ## :rocket: Pull requests
 You've made great progress on an issue, and code in your branch is ready to merge with
