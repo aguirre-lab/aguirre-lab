@@ -15,14 +15,13 @@ You have an idea for a new way to visualize data. Or, you identified a bug in so
 
 1. Go to [`ml4c3`](https://github.com/aguirre-lab/ml4c3) and open an issue (or, take ownership of an existing issue).
     - When you begin working on an issue, move it to `in progress` on the board.
-1. Check out a branch:
-    ```bash
-    git commit -B er-fix-tensorflow-error
-    ```
-1. Commit changes early and often!
-1. When your code is ready for review, submit a PR. Your goal is to merge your branch into `master`.
+1. Checkout a branch.
+1. Commit changes early and often.
+1. When your code is ready for review, submit a PR.
 
 The rest of the documentation describes each step in more detail.
+
+> PRs to `ml4c3` are our key units of technical contribution. The number, quality, and speed of PRs you submit correlate with productivity and engagement.
 
 ## :warning: Issues
 Every task has an issue, and each issue has 1+ labels.
@@ -147,8 +146,6 @@ $ git commit -m 'this is a very special commit' --no-verify
 ## :rocket: Pull requests
 You've made great progress on an issue, and code in your branch is ready to merge with
 `master`. Time to submit a PR!
-
-> PRs are units of technical contribution. We think the number of PRs you submit, and the speed with which you submit them, correlate a lot with productivity and engagement.
 
 Before you submit a PR, review these [best practices for participating in a code review](https://mtlynch.io/code-review-love/). 
 
