@@ -13,14 +13,14 @@ This page describes how to contribute to the `ml4c3` repo.
 ## :octocat: Workflow
 You have an idea for a new way to visualize data. Or, you identified a bug in some machine learning infrastructure. Or, you want to speed up tensorization with a new Python package.
 
-1. Open an issue (or, take ownership of an existing issue).
+1. Go to [`ml4c3`](https://github.com/aguirre-lab/ml4c3) and open an issue (or, take ownership of an existing issue).
     - When you begin working on an issue, move it to `in progress` on the board.
 1. Check out a branch:
     ```bash
     git commit -B er-fix-tensorflow-error
     ```
 1. Commit changes early and often!
-1. When the code is ready for review, submit a PR. Your goal is to merge your work into `master`.
+1. When your code is ready for review, submit a PR. Your goal is to merge your branch into `master`.
 
 The rest of the documentation describes each step in more detail.
 
