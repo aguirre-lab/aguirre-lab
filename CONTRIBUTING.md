@@ -70,7 +70,11 @@ generally it is better to open a PR even for tiny changes.
 1. Reference issues and pull requests liberally after the first line
 
 ## :white_check_mark: Pre-commit
-We use `pre-commit` to automate a linting pipeline. Each time you call `git commit`, the following hooks are run to lint the code so it is readable and consistently formatted:
+We use `pre-commit` to automate a linting pipeline.
+
+`pre-commit` is in the `ml4c3` conda environment and is installed when you run `make setup`.
+
+Each time you call `git commit`, the following hooks are run to lint the code so it is readable and consistently formatted:
 
 | Hook name                       | Short description                                                           |
 |---------------------------------|-----------------------------------------------------------------------------|
