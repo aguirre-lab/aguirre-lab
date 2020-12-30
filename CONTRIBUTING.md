@@ -21,7 +21,9 @@ You have an idea for a new way to visualize data. Or, you identified a bug in so
 
 The rest of the documentation describes each step in more detail.
 
-> PRs to `ml4c3` are our key units of technical contribution. The number, quality, and speed of PRs you submit correlate with productivity and engagement.
+> PRs to `ml4c3` are our key units of technical contribution.
+> The number, quality, and speed of PRs you submit correlate
+> with productivity and engagement.
 
 ## :warning: Issues
 Every task has an issue, and each issue has 1+ labels.
