@@ -76,7 +76,7 @@ We use `pre-commit` to automate a linting pipeline.
 
 Each time you call `git commit`, the following hooks are run to lint the code so it is readable and consistently formatted:
 
-| Hook name                       | Short description                                                           |
+| Hook name                       | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
 | check-executables-have-shebangs | Ensures that (non-binary) executables have a shebang.                       |
 | check-symlinks                  | Checks for symlinks which do not point to anything.                         |
@@ -84,7 +84,7 @@ Each time you call `git commit`, the following hooks are run to lint the code so
 | check-yaml                      | This hook checks yaml files for parseable syntax.                           |
 | debug-statements                | Check for debugger imports and py37+ `breakpoint()` calls in python source. |
 | end-of-file-fixer               | Ensures that a file is either empty, or ends with one newline.              |
-| mixed-line-ending               | Replaces ; endings bu \n                                                    |
+| mixed-line-ending               | Replaces ; endings with \n                                                  |
 | name-tests-test                 | This verifies that test files are named correctly                           |
 | no-commit-to-branch             | Don't commit to branch (master)                                             |
 | trailing-whitespace             | This hook trims trailing whitespace.                                        |
@@ -93,12 +93,12 @@ Each time you call `git commit`, the following hooks are run to lint the code so
 | rst-backticks                   | Detect common mistake of using single backticks when writing rst            |
 | isort                           | Check and reorders imports                                                  |
 | seed-isort-config               | Automatic configuration for third party packages for isort                  |
-| black                           | Popular linter. Checks and reformats code                                   |
+| black                           | Checks and reformats code                                                   |
 | docformatter                    | Reformats docstrings                                                        |
 | pydocstyle                      | Checks docstrings' format                                                   |
 | markdownlint                    | Checks markdown syntax                                                      |
-| flake8                          | Popular linter. Checks the code more deeply than black                      |
-| pylint                          | Most popular linter and also the most strict                                |
+| flake8                          | Checks code style more deeply than black                                    |
+| pylint                          | Another linter to check code style; most strict                             |
 | mypy                            | Checks python's typing                                                      |
 | gitlint                         | Checks commit messages                                                      |
 
