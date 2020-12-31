@@ -3,8 +3,9 @@ This page describes how to contribute to the `ml4c3` repo.
 ## Table of Contents
 1. [:octocat: Workflow](#octocat-workflow)
 1. [:warning: Issues](#warning-issues)
+1. [:speech_balloon: Discussions](#speech_balloon-discussions)
 1. [:evergreen_tree: Branches](#evergreen_tree-branches)
-1. [:speech_balloon: Commit messages](#speech_balloon-commit-messages)
+1. [:mega: Commit messages](#mega-commit-messages)
 1. [:white_check_mark: Pre-commit](#white_check_mark-pre-commit)
 1. [:rocket: Pull requests](#rocket-pull-requests)
 1. [:construction: Code reviews](#construction-code-reviews)
@@ -24,13 +25,20 @@ The rest of the documentation describes each step in more detail.
 > PRs to `ml4c3` are our key units of technical contribution. The number, quality,  
 > and speed of PRs you submit correlate with productivity and engagement.
 
+## :speech_balloon: Discussions
+Our [Discussions](https://github.com/aguirre-lab/ml4c3/discussions) page is for 
+asking questions, brainstorming ideas, and having conversations that are _not_ concrete
+code or analysis tasks. Those latter topics are covered by Issues (see below).
+
+From [the GitHub blog](https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/#codespaces):
+> Software communities don’t just write code together. They brainstorm feature ideas, help new users get their bearings, and collaborate on best ways to use the software. Until now, GitHub only offered issues and pull requests as places to have these conversations. But issues and pull requests both have a linear format—well suited for merging code, but not for creating a community knowledge base. Conversations need their own place—that’s what GitHub Discussions is for.
+
 ## :warning: Issues
 Every task has an issue, and each issue has 1+ labels.
 
-New issues are created with one of our [issue templates](.github/ISSUE_TEMPLATE):
-1. new feature request or enhancement
+We have [issue templates](.github/ISSUE_TEMPLATE) for the three possible issues:
+1. new feature
 1. data or modeling task
-1. question
 1. bug report
 
 Good issues are clearly written and small enough to be addressed in a few days. Several small tasks can be bundled into one issue.
@@ -63,7 +71,7 @@ $ git push -u origin er-fix-grid-ecg-plot
 Do not commit and push directly to `master`. Exceptions are allowed for minor typos, but
 generally it is better to open a PR even for tiny changes.
 
-## :speech_balloon: Commit messages
+## :mega: Commit messages
 1. Use the present tense ("Add feature" not "Added feature")
 1. Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 1. Limit the first line to 72 characters or less
