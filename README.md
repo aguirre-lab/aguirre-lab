@@ -28,8 +28,6 @@ Here are some of our general practices:
 1. We use the [BSD 3-clause license](https://choosealicense.com/licenses/bsd-3-clause/).
 1. Create branches, push commits, and submit PRs as early as possible.
 
-To learn about specifics of our workflow, and how to contribute to `ml4c3`, read [`CONTRIBUTING`](/contributing.md).
-
 ## Communication
 Communication around tasks is primarily via GitHub. We do this to document shareable conversations, link discussions to code, and avoid interrupting "deep work". [Read more about why aysnchronous communication is good](https://blog.doist.com/asynchronous-communication/).
 
