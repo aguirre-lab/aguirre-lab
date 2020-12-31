@@ -65,21 +65,21 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2020 Dec 21 | --      |
 | 2020 Dec 28 | --      |
 | 2021 Jan 04 | Raimon  |
-| 2021 Jan 11 | Steven  |
+| 2021 Jan 11 | Yirong  |
 | 2021 Jan 18 | Erik    |
-| 2021 Jan 25 | Yirong  |
+| 2021 Jan 25 | Roger   |
 | 2021 Feb 01 | Anand   |
-| 2021 Feb 08 | Eric    |
-| 2021 Feb 15 | Erik    |
-| 2021 Feb 22 | Raimon  |
-| 2021 Mar 01 | Ridwan  |
-| 2021 Mar 08 | Roger   |
-| 2021 Mar 15 | Steven  |
-| 2021 Mar 22 | Yirong  |
+| 2021 Feb 08 | Ridwan  |
+| 2021 Feb 15 | Steven  |
+| 2021 Feb 22 | Eric    |
+| 2021 Mar 01 | Raimon  |
+| 2021 Mar 08 | Yirong  |
+| 2021 Mar 15 | Erik    |
+| 2021 Mar 22 | Roger   |
 | 2021 Mar 29 | Anand   |
-| 2021 Apr 05 | Eric    |
-| 2021 Apr 12 | Erik    |
-| 2021 Apr 19 | Raimon  |
+| 2021 Apr 05 | Ridwan  |
+| 2021 Apr 12 | Steven  |
+| 2021 Apr 19 | Eric    |
 ```
 
 ## Compute
