@@ -56,8 +56,8 @@ Each team member shares:
 We meet weekly. A group member presents a research talk, paper, or method.
 
 ```
-| Date        | Speaker |
-|-------------|---------|
+| Date        | Speaker      |
+|-------------|--------------|
 | 2020 Dec 07 | Roger        |
 | 2020 Dec 14 | Eric         |
 | 2020 Dec 21 | --           |
