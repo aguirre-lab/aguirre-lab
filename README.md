@@ -58,26 +58,28 @@ We meet weekly. A group member presents a research talk, paper, or method.
 ```
 | Date        | Speaker |
 |-------------|---------|
-| 2020 Dec 07 | Roger   |
-| 2020 Dec 14 | Eric    |
-| 2020 Dec 21 | --      |
-| 2020 Dec 28 | --      |
-| 2021 Jan 04 | Raimon  |
-| 2021 Jan 11 | Yirong  |
-| 2021 Jan 18 | Erik    |
-| 2021 Jan 25 | Roger   |
-| 2021 Feb 01 | Anand   |
-| 2021 Feb 08 | Ridwan  |
-| 2021 Feb 15 | Steven  |
-| 2021 Feb 22 | Eric    |
-| 2021 Mar 01 | Raimon  |
-| 2021 Mar 08 | Yirong  |
-| 2021 Mar 15 | Erik    |
-| 2021 Mar 22 | Roger   |
-| 2021 Mar 29 | Anand   |
-| 2021 Apr 05 | Ridwan  |
-| 2021 Apr 12 | Steven  |
-| 2021 Apr 19 | Eric    |
+| 2020 Dec 07 | Roger        |
+| 2020 Dec 14 | Eric         |
+| 2020 Dec 21 | --           |
+| 2020 Dec 28 | --           |
+| 2021 Jan 04 | Raimon       |
+| 2021 Jan 11 | Team updates |
+| 2021 Jan 18 | Erik         |
+| 2021 Jan 25 | Yirong       |
+| 2021 Feb 01 | Roger        |
+| 2021 Feb 08 | Anand        |
+| 2021 Feb 15 | Ridwan       |
+| 2021 Feb 22 | Steven       |
+| 2021 Mar 01 | Eric         |
+| 2021 Mar 08 | Raimon       |
+| 2021 Mar 15 | Erik         |
+| 2021 Mar 22 | Yirong       |
+| 2021 Mar 29 | Roger        |
+| 2021 Apr 05 | Anand        |
+| 2021 Apr 12 | Ridwan       |
+| 2021 Apr 19 | Steven       |
+| 2021        | Eric         |
+| 2021        | Raimon       | 
 ```
 
 ## Compute
