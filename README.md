@@ -66,13 +66,13 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2021 Jan 11 | Team updates |
 | 2021 Jan 18 | Erik         |
 | 2021 Jan 25 | Yirong       |
-| 2021 Feb 01 | Roger        |
-| 2021 Feb 08 | Anand        |
-| 2021 Feb 15 | Ridwan       |
-| 2021 Feb 22 | Steven       |
-| 2021 Mar 01 | Eric         |
-| 2021 Mar 08 | Raimon       |
-| 2021 Mar 15 | Erik         |
+| 2021 Feb 01 | --           |
+| 2021 Feb 08 | Roger        |
+| 2021 Feb 15 | Anand        |
+| 2021 Feb 22 | Ridwan       |
+| 2021 Mar 01 | Steven       |
+| 2021 Mar 08 | Eric         |
+| 2021 Mar 15 | Raimon       |
 | 2021 Mar 22 | Yirong       |
 | 2021 Mar 29 | Roger        |
 | 2021 Apr 05 | Anand        |
