@@ -71,13 +71,14 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2021 Feb 15 | Roger        |
 | 2021 Feb 22 | Anand        |
 | 2021 Mar 01 | Ridwan       |
-| 2021 Mar 08 | Steven       |
-| 2021 Mar 15 | Eric         |
-| 2021 Mar 22 | Raimon       |
-| 2021 Mar 29 | Yirong       |
-| 2021 Apr 05 | Roger        |
-| 2021 Apr 12 | Anand        |
-| 2021 Apr 19 | Ridwan       |
+| 2021 Mar 08 | NO MEETING   |
+| 2021 Mar 15 | Steven       |
+| 2021 Mar 22 | Eric         |
+| 2021 Mar 29 | Raimon       |
+| 2021 Apr 05 | Yirong       |
+| 2021 Apr 12 | Roger        |
+| 2021 Apr 19 | Anand        |
+| 2021        | Ridwan       |
 | 2021        | Steven       |
 | 2021        | Eric         | 
 ```
