@@ -77,11 +77,12 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2021 Mar 29 | Raimon       |
 | 2021 Apr 05 | Team updates |
 | 2021 Apr 12 | Yirong       |
-| 2021 Apr 19 | Roger        |
+| 2021 Apr 19 | Junyoung     |
 | 2021 Apr 26 | Anand        |
 | 2021 May 03 | Steven       |
 | 2021 May 10 | Eric         | 
 | 2021 May 17 | Ridwan       | 
+| 2021 May 24 | Roger        |
 ```
 
 ## Compute
