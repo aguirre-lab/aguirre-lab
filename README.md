@@ -80,10 +80,13 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2021 Apr 19 | Junyoung     |
 | 2021 Apr 26 | NO MEETING   |
 | 2021 May 03 | Anand        |
-| 2021 May 10 | Steven       |
-| 2021 May 17 | Eric         | 
-| 2021 May 24 | Ridwan       | 
-| 2021 May 31 | Roger        |
+| 2021 May 10 | Raimon,      |
+|             | Roger,       |
+|             | Eric Thesis  |
+| 2021 May 17 | Steven       |
+| 2021 May 24 | Eric         | 
+| 2021 May 31 | Ridwan       | 
+| 2021 Jun 07 | Roger        |
 ```
 
 ## Compute
