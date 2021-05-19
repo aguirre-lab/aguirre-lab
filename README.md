@@ -84,8 +84,8 @@ We meet weekly. A group member presents a research talk, paper, or method.
 |             | Roger,       |
 |             | Eric Thesis  |
 | 2021 May 17 | Steven       |
-| 2021 May 24 | Eric         | 
-| 2021 May 31 | Ridwan       | 
+| 2021 May 24 | Ridwan       | 
+| 2021 May 31 | Eric         | 
 | 2021 Jun 07 | Roger        |
 ```
 
