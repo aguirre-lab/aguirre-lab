@@ -85,10 +85,10 @@ We meet weekly. A group member presents a research talk, paper, or method.
 |             | Eric Thesis  |
 | 2021 May 17 | Steven       |
 | 2021 May 24 | Team updates | 
-| 2021 May 31 | Cancelled            | 
+| 2021 May 31 | Cancelled    | 
 | 2021 Jun 07 | Team updates |
 | 2021 Jun 14 |              |
-| 2021 Jun 21 | Ridwan             |
+| 2021 Jun 21 | Ridwan       |
 | 2021 Jun 28 |              |
 | 2021 Jul 05 |              |
 | 2021 Jul 12 |              |
