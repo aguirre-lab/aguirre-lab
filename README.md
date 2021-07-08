@@ -94,7 +94,7 @@ We meet weekly. A group member presents a research talk, paper, or method.
 | 2021 Jul 12 |              |
 | 2021 Jul 19 |              |
 | 2021 Jul 26 |              |
-| 2021 Aug 02 |              |
+| 2021 Aug 02 | Ridwan       |
 | 2021 Aug 09 |              |
 | 2021 Aug 16 |              |
 | 2021 Aug 23 |              |
